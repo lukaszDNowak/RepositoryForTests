@@ -39,6 +39,28 @@ namespace Testy.Tests
         {
             _driver.Close();
         }
+
+        [Test]
+        public void LoginTestSelenium()
+        {
+            var userEmail = "Lukasz@Nowak.pl";
+            var pass = "ZaliczeniePrzedmiotuNa5:)";
+
+            _driver.Navigate().GoToUrl("http://lukasznowak.azurewebsites.net/Account/Login");
+            _driver.FindElement(By.Id("loginLink")).Click();
+
+            var email = _driver.FindElement(By.Id("Email"));
+            email.SendKeys(userEmail);
+
+            var password = _driver.FindElement(By.Id("Password"));
+            password.SendKeys(pass);
+
+            _driver.FindElement(By.Id("saveBtn")).Click();
+
+            new WebDriverWait(_driver, TimeSpan.FromSeconds(10))
+            .Until(SeleniumExtras.WaitHelpers.ExpectedConditions.UrlMatches("http://lukasznowak.azurewebsites.net/"));
+
+        }
     }
 }
 
