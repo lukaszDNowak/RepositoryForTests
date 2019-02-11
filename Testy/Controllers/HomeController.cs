@@ -30,7 +30,7 @@ namespace Testy.Controllers
             return View();
         }
 
-      
+        [Authorize]
         public ActionResult About()
         {
             ViewBag.Message = "Strona została utworzona na potrzeby zaliczenia przedmiotu : Testy i kontrola jakości oprogramowania ";
@@ -38,6 +38,7 @@ namespace Testy.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult Contact()
         {
             return View();
