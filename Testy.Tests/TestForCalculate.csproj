@@ -119,7 +119,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test\HomeControllerTest.cs" />
     <Compile Include="Test\SeleniumTest.cs" />
-    <Compile Include="Test\UnitTestCalculateMethod.cs" />
+    <Compile Include="Test\UnitTestSumMethod.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -128,9 +128,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Testy\Testy.csproj">
+    <ProjectReference Include="..\Testy\DodawatorTests.csproj">
       <Project>{B40E5E35-514F-4857-8727-6310C023037E}</Project>
-      <Name>Testy</Name>
+      <Name>DodawatorTests</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

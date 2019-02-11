@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testy", "Testy\Testy.csproj", "{B40E5E35-514F-4857-8727-6310C023037E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DodawatorTests", "Testy\DodawatorTests.csproj", "{B40E5E35-514F-4857-8727-6310C023037E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForCalculate", "Testy.Tests\TestForCalculate.csproj", "{C0F6A14F-8900-4648-92F1-8161A292F90F}"
 EndProject
